@@ -60,18 +60,18 @@ void core0_main(void)
     IfxCpu_emitEvent(&g_cpuSyncEvent);
     IfxCpu_waitEvent(&g_cpuSyncEvent, 1);
     
-    char rxData[RX_LENGTH];     /* Variable to store the user input                     */
+    //char rxData[RX_LENGTH];     /* Variable to store the user input                     */
 
     init_UART();                /* Initialization for the UART communication            */
 
     while(1)
     {
-        rxData[0] = RESET_CHARACTER;        /* Reset received data                      */
+        // rxData[0] = RESET_CHARACTER;        /* Reset received data                      */
 
-        while(rxData[0] != PASS_CHARACTER)  /* Wait for receive the correct character   */
-        {
-            receive_data(rxData, RX_LENGTH);
-        }
+        // while(rxData[0] != PASS_CHARACTER)  /* Wait for receive the correct character   */
+        // {
+        //     receive_data(rxData, RX_LENGTH);
+        // }
 
         /* Convert the configured EVADC channel */
         send_data(COMPLETED_TRANSFER_TEXT, ACK_TEXT_LENGTH); /* Acknowledgment via UART - Triggered by DMA transaction done */
