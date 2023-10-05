@@ -41,7 +41,7 @@
 #define IFX_INTPRIO_ASCLIN1_TX      1                                           /* Define TX interrupt priority     */
 #define IFX_INTPRIO_ASCLIN1_RX      2                                           /* Define RX interrupt priority     */
 
-#define CLOCK_PIN                   IfxAsclin1_SCLK_P20_10_OUT                  /* Define Clock port pin            */
+#define CLOCK_PIN                   IfxAsclin1_SCLK_P15_0_OUT                  /* Define Clock port pin            */
 #define MTSR_PIN                    IfxAsclin1_TX_P15_4_OUT                     /* Define MTSR port pin             */
 #define MRST_PIN                    IfxAsclin1_RXB_P15_5_IN                     /* Define MRST port pin             */
 
